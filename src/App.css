@@ -1,0 +1,52 @@
+
+.select-container {
+  display: flex;
+  justify-content: space-between; /* Distribute the items with space between them */
+  align-items: center; /* Vertically center the select boxes */
+  gap: 20px; /* Adds space between each select box */
+  margin-top: 20px; /* Optional: Adds margin from the top of the container */
+}
+
+/* Each select box and its heading */
+.select-item {
+  display: flex;
+  flex-direction: column; /* Stack heading and select box vertically */
+  align-items: center; /* Center them horizontally */
+  text-align: center; /* Center the heading text */
+  width: 30%; /* Adjust width of each select box container */
+}
+
+/* Styling for the select boxes */
+.form-select {
+  width: 100%; /* Makes the select box fill the container's width */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Make the State and City select boxes smaller when disabled */
+.form-select:disabled {
+  width: 80%; /* Smaller width when disabled */
+  opacity: 0.6; /* Make disabled select box look faded */
+  cursor: not-allowed; /* Show a "not allowed" cursor */
+}
+
+.heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Optional: Adds space below the heading */
+}
+
+/* Center the text of h1 directly */
+h1 {
+  text-align: center;
+}
+
+.selected-location {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  color: #333;
+}
+
