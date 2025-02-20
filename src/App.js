@@ -113,8 +113,8 @@ function App() {
      {selectedCountry && selectedState && selectedCity && (
         <div className="selected-location">
           <h3>
-            You selected {selectedCountry}, {selectedState}, {selectedCity}
-          </h3>
+          You selected {selectedCity}, {selectedState}, {selectedCountry}
+            </h3>
         </div>
       )}
     </div>
@@ -122,4 +122,3 @@ function App() {
 }
 
 export default App;
-
